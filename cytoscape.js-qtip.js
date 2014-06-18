@@ -71,7 +71,7 @@
       var scratch = ele.scratch();
       var qtip = scratch.qtip = scratch.qtip || {};
       var opts = generateOpts( qtip, passedOpts );
-
+      opts.ele = ele;
 
       // call qtip on dummy dom ele      
       qtip.$domEle.qtip( opts );
